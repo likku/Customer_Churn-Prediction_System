@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Apr, 2014 12:05:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="fs.FeedbackData" table="feedback_data" catalog="feedbacksystemonproducts1">
+        <id name="FId" type="java.lang.Integer">
+            <column name="f_id" />
+            <generator class="identity" />
+        </id>
+        <property name="prodictId" type="int">
+            <column name="prodict_id" not-null="true" />
+        </property>
+        <property name="dateTime" type="string">
+            <column name="date_time" length="200" not-null="true" />
+        </property>
+        <property name="feedbackData" type="string">
+            <column name="feedback_data" length="65535" not-null="true" />
+        </property>
+        <property name="rating" type="int">
+            <column name="rating" not-null="true" />
+        </property>
+        <property name="givenby" type="string">
+            <column name="givenby" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

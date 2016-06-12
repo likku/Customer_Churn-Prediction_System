@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Apr, 2014 12:05:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="fs.PackagesData" table="packages_data" catalog="feedbacksystemonproducts1">
+        <id name="packId" type="java.lang.Integer">
+            <column name="pack_id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="65535" not-null="true" />
+        </property>
+        <property name="noOfEmployees" type="int">
+            <column name="no_of_employees" not-null="true" />
+        </property>
+        <property name="noOfTasks" type="int">
+            <column name="no_of_tasks" not-null="true" />
+        </property>
+        <property name="cost" type="int">
+            <column name="cost" not-null="true" />
+        </property>
+        <property name="duration" type="int">
+            <column name="duration" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

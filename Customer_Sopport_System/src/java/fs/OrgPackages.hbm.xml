@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Apr, 2014 12:05:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="fs.OrgPackages" table="org_packages" catalog="feedbacksystemonproducts1">
+        <id name="userPackId" type="java.lang.Integer">
+            <column name="user_pack_id" />
+            <generator class="identity" />
+        </id>
+        <property name="packId" type="int">
+            <column name="pack_id" not-null="true" />
+        </property>
+        <property name="organizationId" type="string">
+            <column name="organization_id" length="65535" not-null="true" />
+        </property>
+        <property name="selectDate" type="date">
+            <column name="select_date" length="10" not-null="true" />
+        </property>
+        <property name="startDate" type="date">
+            <column name="start_date" length="10" not-null="true" />
+        </property>
+        <property name="endDate" type="date">
+            <column name="end_date" length="10" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Apr, 2014 12:05:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="fs.Answersdata" table="answersdata" catalog="feedbacksystemonproducts1">
+        <id name="sno" type="java.lang.Integer">
+            <column name="sno" />
+            <generator class="identity" />
+        </id>
+        <property name="productid" type="string">
+            <column name="productid" length="50" not-null="true" />
+        </property>
+        <property name="questionid" type="string">
+            <column name="questionid" length="80" not-null="true" />
+        </property>
+        <property name="imgurl" type="string">
+            <column name="imgurl" length="65535" not-null="true" />
+        </property>
+        <property name="videourl" type="string">
+            <column name="videourl" length="65535" not-null="true" />
+        </property>
+        <property name="answerdesc" type="string">
+            <column name="answerdesc" length="65535" not-null="true" />
+        </property>
+        <property name="givenby" type="string">
+            <column name="givenby" length="100" not-null="true" />
+        </property>
+        <property name="toid" type="string">
+            <column name="toid" length="100" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="60" not-null="true" />
+        </property>
+        <property name="compid" type="string">
+            <column name="compid" length="244" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

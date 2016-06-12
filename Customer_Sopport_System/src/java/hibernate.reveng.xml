@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="feedbacksystemonproducts1"/>
+  <table-filter match-name="admin_data"/>
+  <table-filter match-name="pm_details"/>
+  <table-filter match-name="org_packages"/>
+  <table-filter match-name="companyhead_data"/>
+  <table-filter match-name="answersdata"/>
+  <table-filter match-name="feedback_data"/>
+  <table-filter match-name="product_details"/>
+  <table-filter match-name="packages_data"/>
+  <table-filter match-name="employee_data"/>
+  <table-filter match-name="user_details"/>
+</hibernate-reverse-engineering>
